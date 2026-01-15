@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Programmer Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Minimal Backend Developer Palette - Monochrome with subtle blue */
+    --background: 210 11% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 222 47% 11%; /* Near-black slate */
+    --primary-foreground: 210 11% 98%;
+
+    --secondary: 215 16% 47%; /* Muted steel */
+    --secondary-foreground: 210 11% 98%;
+
+    --accent: 215 20% 65%; /* Soft slate-blue */
+    --accent-foreground: 222 47% 11%;
+
+    --muted: 210 11% 93%;
+    --muted-foreground: 215 16% 47%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 14% 89%;
+    --input: 214 14% 89%;
+    --ring: 222 47% 11%;
+
+    --radius: 0.5rem;
+
+    /* Portfolio-specific colors */
+    --portfolio-dark: 222 47% 11%;
+    --portfolio-steel: 215 16% 47%;
+    --portfolio-light: 210 11% 98%;
+    --portfolio-text: 222 47% 11%;
+
+    /* Subtle glass effects */
+    --glass-bg: 0 0% 100% / 0.8;
+    --glass-border: 214 14% 89%;
+
+    /* Clean shadows */
+    --shadow-sm: 0 1px 2px 0 0 0% 0% / 0.05;
+    --shadow-md: 0 4px 6px -1px 0 0% 0% / 0.07;
+
+    /* Animation variables */
+    --transition-smooth: all 0.2s ease;
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 222 47% 11%;
+    --sidebar-primary-foreground: 210 11% 98%;
+    --sidebar-accent: 210 11% 93%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 14% 89%;
+    --sidebar-ring: 222 47% 11%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 11% 93%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 210 11% 93%;
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 210 11% 93%;
+
+    --primary: 210 11% 93%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 215 16% 57%;
+    --secondary-foreground: 222 47% 6%;
+
+    --accent: 215 20% 65%;
+    --accent-foreground: 222 47% 6%;
+
+    --muted: 222 47% 12%;
+    --muted-foreground: 215 16% 57%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 47% 15%;
+    --input: 222 47% 15%;
+    --ring: 210 11% 93%;
+
+    /* Dark mode portfolio colors */
+    --portfolio-dark: 210 11% 93%;
+    --portfolio-steel: 215 16% 57%;
+    --portfolio-light: 222 47% 6%;
+    --portfolio-text: 210 11% 93%;
+
+    /* Dark mode glass effects */
+    --glass-bg: 222 47% 9% / 0.9;
+    --glass-border: 222 47% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-inter;
+  }
+}
+
+@layer components {
+  /* Clean card component */
+  .glass-card {
+    @apply bg-card/90 backdrop-blur-sm border border-border rounded-lg;
+    box-shadow: 0 1px 3px hsl(0 0% 0% / 0.04);
+  }
+
+  .dark .glass-card {
+    @apply bg-card/95 border-border;
+    box-shadow: 0 1px 3px hsl(0 0% 0% / 0.2);
+  }
+
+  /* Clean card effect */
+  .neuro-card {
+    @apply bg-card rounded-lg border border-border;
+    box-shadow: 0 1px 3px hsl(0 0% 0% / 0.04);
+  }
+
+  /* Subtle gradient text - mostly dark with hint of steel */
+  .gradient-text {
+    @apply text-foreground font-semibold;
+  }
+
+  /* Smooth animations */
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.6s ease-out forwards;
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px hsl(var(--secondary) / 0.3);
+  }
+}
+
+@layer utilities {
+  .text-portfolio-dark {
+    color: hsl(var(--portfolio-dark));
+  }
+
+  .text-portfolio-steel {
+    color: hsl(var(--portfolio-steel));
+  }
+
+  .bg-portfolio-light {
+    background-color: hsl(var(--portfolio-light));
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes waveSlow {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+
+.animate-wave {
+  animation: wave 12s ease-in-out infinite alternate;
+}
+
+.animate-wave-slow {
+  animation: waveSlow 15s ease-in-out infinite alternate;
+}
+
+.animate-wave-delayed {
+  animation: wave 10s ease-in-out 2s infinite alternate;
+}
