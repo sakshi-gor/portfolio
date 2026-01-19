@@ -153,9 +153,10 @@ npm run preview
 ```
 portfolio/
 ├── public/
-│   ├── favicon.ico
 │   ├── robots.txt
 │   └── Sakshi_Gor_Resume.docx
+├── workflows/
+│   ├── deploy.yml
 ├── src/
 │   ├── assets/
 │   ├── components/
