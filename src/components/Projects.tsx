@@ -5,36 +5,36 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      stars: 124,
-      forks: 32
+      title: "Portfolio Site",
+      description: "A personal portfolio site showcasing my projects and skills. Built with React, Tailwind CSS, and Framer Motion.",
+      image: "src/assets/Portfolio_Snap.png",
+      tech: ["React", "Tailwind CSS", "PostgreSQL", "Stripe", "AWS"],
+      github: "https://github.com/sakshi-gor/portfolio",
+      demo: "https://sakshi-gor.github.io/portfolio/",
+      stars: 0,
+      forks: 0
     },
     {
       id: 2,
-      title: "AI Chat Application",
-      description: "Real-time chat application with AI-powered responses using OpenAI API. Built with Next.js, Socket.io, and MongoDB.",
+      title: "Product Review Analysis",
+      description: "Sentiment analysis tool for product reviews using NLP techniques. Built with Streamlit, Plotly, and Matplotlib.",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      tech: ["Next.js", "OpenAI", "Socket.io", "MongoDB", "Tailwind"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      stars: 89,
-      forks: 21
+      tech: ["Python", "Streamlit", "Matplotlib", "Plotly", "SQL"],
+      github: "https://github.com/AnythingIsFineLambton/Product_Review",
+      demo: "https://anythingisfinelambton-product-review-home-2t3rw0.streamlit.app/",
+      stars: 0,
+      forks: 0
     },
     {
       id: 3,
-      title: "Task Management Dashboard",
-      description: "Modern task management application with drag-and-drop functionality, team collaboration, and real-time updates.",
+      title: "Personal Blog WordPress",
+      description: "Modern personal blog built with WordPress, featuring a clean design, responsive layout, and easy content management. (No GitHub)",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      tech: ["Vue.js", "Firebase", "TypeScript", "Vuetify", "PWA"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      stars: 67,
-      forks: 15
+      tech: ["WordPress", "PHP", "JavaScript", "CSS", "HTML"],
+      // github: "https://github.com",
+      demo: "https://sakshigor.wordpress.com/",
+      stars: 0,
+      forks: 0
     },
     {
       id: 4,
