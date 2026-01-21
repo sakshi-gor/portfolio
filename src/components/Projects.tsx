@@ -7,7 +7,7 @@ const Projects = () => {
       id: 1,
       title: "Portfolio Site",
       description: "A personal portfolio site showcasing my projects and skills. Built with React, Tailwind CSS, and Framer Motion.",
-      image: "src/assets/Portfolio_Snap.png",
+      image: "https://github.com/sakshi-gor/portfolio/blob/f3c8135121cce28277599c82040bb789c85fa0fc/src/assets/Portfolio_Snap.png",
       tech: ["React", "Tailwind CSS", "PostgreSQL", "Stripe", "AWS"],
       github: "https://github.com/sakshi-gor/portfolio",
       demo: "https://sakshi-gor.github.io/portfolio/",
@@ -29,46 +29,46 @@ const Projects = () => {
       id: 3,
       title: "Personal Blog WordPress",
       description: "Modern personal blog built with WordPress, featuring a clean design, responsive layout, and easy content management. (No GitHub)",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      image: "https://github.com/sakshi-gor/portfolio/blob/main/src/assets/WebGet_Blog.png",
       tech: ["WordPress", "PHP", "JavaScript", "CSS", "HTML"],
       // github: "https://github.com",
       demo: "https://sakshigor.wordpress.com/",
       stars: 0,
       forks: 0
     },
-    {
-      id: 4,
-      title: "Weather Analytics API",
-      description: "RESTful API for weather data analytics with machine learning predictions. Includes comprehensive documentation and rate limiting.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      tech: ["Python", "FastAPI", "TensorFlow", "Docker", "Redis"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      stars: 156,
-      forks: 43
-    },
-    {
-      id: 5,
-      title: "Mobile Fitness App",
-      description: "Cross-platform fitness tracking app with workout plans, progress tracking, and social features.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      tech: ["React Native", "Expo", "Firebase", "Redux", "Styled Components"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      stars: 98,
-      forks: 28
-    },
-    {
-      id: 6,
-      title: "Blockchain Voting System",
-      description: "Decentralized voting platform built on Ethereum with smart contracts for transparent and secure elections.",
-      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      tech: ["Solidity", "React", "Web3.js", "Ethereum", "IPFS"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      stars: 203,
-      forks: 67
-    }
+    // {
+    //   id: 4,
+    //   title: "Weather Analytics API",
+    //   description: "RESTful API for weather data analytics with machine learning predictions. Includes comprehensive documentation and rate limiting.",
+    //   image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop&crop=entropy&auto=format",
+    //   tech: ["Python", "FastAPI", "TensorFlow", "Docker", "Redis"],
+    //   github: "https://github.com",
+    //   demo: "https://demo.com",
+    //   stars: 156,
+    //   forks: 43
+    // },
+    // {
+    //   id: 5,
+    //   title: "Mobile Fitness App",
+    //   description: "Cross-platform fitness tracking app with workout plans, progress tracking, and social features.",
+    //   image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop&crop=entropy&auto=format",
+    //   tech: ["React Native", "Expo", "Firebase", "Redux", "Styled Components"],
+    //   github: "https://github.com",
+    //   demo: "https://demo.com",
+    //   stars: 98,
+    //   forks: 28
+    // },
+    // {
+    //   id: 6,
+    //   title: "Blockchain Voting System",
+    //   description: "Decentralized voting platform built on Ethereum with smart contracts for transparent and secure elections.",
+    //   image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop&crop=entropy&auto=format",
+    //   tech: ["Solidity", "React", "Web3.js", "Ethereum", "IPFS"],
+    //   github: "https://github.com",
+    //   demo: "https://demo.com",
+    //   stars: 203,
+    //   forks: 67
+    // }
   ];
 
   return (
