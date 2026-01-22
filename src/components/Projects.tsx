@@ -1,13 +1,16 @@
 import { ExternalLink, Github, Star, GitFork } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+import portfolioImg from "@/assets/portfolio-preview.png";
+import webgetImg from "@/assets/webget-preview.png";
+
 const Projects = () => {
   const projects = [
     {
       id: 1,
       title: "Portfolio Site",
       description: "A personal portfolio site showcasing my projects and skills. Built with React, Tailwind CSS, and Framer Motion.",
-      image: "https://github.com/sakshi-gor/portfolio/blob/f3c8135121cce28277599c82040bb789c85fa0fc/src/assets/Portfolio_Snap.png",
+      image: portfolioImg,
       tech: ["React", "Tailwind CSS", "PostgreSQL", "Stripe", "AWS"],
       github: "https://github.com/sakshi-gor/portfolio",
       demo: "https://sakshi-gor.github.io/portfolio/",
@@ -29,7 +32,7 @@ const Projects = () => {
       id: 3,
       title: "Personal Blog WordPress",
       description: "Modern personal blog built with WordPress, featuring a clean design, responsive layout, and easy content management. (No GitHub)",
-      image: "https://github.com/sakshi-gor/portfolio/blob/main/src/assets/WebGet_Blog.png",
+      image: webgetImg,
       tech: ["WordPress", "PHP", "JavaScript", "CSS", "HTML"],
       // github: "https://github.com",
       demo: "https://sakshigor.wordpress.com/",
