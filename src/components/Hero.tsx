@@ -59,7 +59,7 @@ const Hero = () => {
               className="bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth px-8 py-3 rounded-2xl hover-lift"
               asChild
             >
-              <a href="/Sakshi_Gor_Resume.docx" download>
+              <a href="/sakshi_gor_resume.docx" download>
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </a>
